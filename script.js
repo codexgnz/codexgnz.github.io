@@ -25,7 +25,7 @@ const Q=[
 ["VLAN berfungsi untuk…",["Memperbesar bandwidth","Memisahkan jaringan logis dalam satu switch","Mengenkripsi data","Menggantikan router"],1],
 ["Alat untuk memasang konektor RJ-45 pada kabel UTP adalah…",["Tang crimping","Obeng","Solder","LAN tester"],0]];
 const $=id=>document.getElementById(id),MAX=3,DUR=45*60;
-const GOOGLE_SHEET_WEBAPP_URL="PASTE_YOUR_APPS_SCRIPT_WEB_APP_URL_HERE";
+const GOOGLE_SHEET_WEBAPP_URL="https://script.google.com/macros/s/AKfycbyJTN6FvJgaGIaywkqu2_1ZjkzTtt2q-q4_Pk4JADPdTCahVYMbpWOjFVEa78nXuh0hcg/exec";
 let order,perm,ans,cur,viol=0,log=[],run=false,locked=false,left=DUR,tt,ct,stream,fsOK=false,base,lastV=0,noFace=0,nm,ns;
 const sh=a=>{for(let i=a.length-1;i>0;i--){const j=Math.random()*(i+1)|0;[a[i],a[j]]=[a[j],a[i]]}return a};
 const show=id=>["s0","s1","s2"].forEach(x=>$(x).classList.toggle("hide",x!==id));
