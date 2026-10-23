@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="id"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>TKA TKJ – Ujian Terproteksi (Copy)</title>
+<link rel="stylesheet" href="style.css">
+</head><body><div class="w">
+
+<div id="s0">
+ <div class="card"><h1>TKA – Teknik Komputer &amp; Jaringan</h1><p>25 soal pilihan ganda · 45 menit · pengawasan otomatis</p></div>
+ <div class="card"><h2>Peraturan</h2><ul>
+  <li>Layar penuh dan kamera aktif selama ujian.</li>
+  <li>Dilarang pindah aplikasi, membuka aplikasi mengambang, split-screen, atau menyalin teks.</li>
+  <li>Setiap pelanggaran tercatat. Pelanggaran ke-3 mengakhiri ujian otomatis.</li></ul></div>
+ <div class="card"><input id="nm" placeholder="Nama lengkap" autocomplete="off"><input id="ns" placeholder="NIS / Nomor peserta" autocomplete="off">
+ <p id="err" class="v"></p><button class="btn" id="go">Mulai Ujian</button></div>
+</div>
+
+<div id="s1" class="hide">
+ <div class="bar"><video id="cam" autoplay muted playsinline></video><span>Waktu <b id="tm">45:00</b></span><span>Soal <b id="no">1</b>/25</span><span class="v">Pelanggaran <b id="vc">0</b>/3</span></div>
+ <div class="card"><div id="q"></div><div id="op"></div></div>
+ <div class="row"><button class="btn s" id="pv">‹ Sebelumnya</button><button class="btn s" id="nx">Berikutnya ›</button></div>
+ <div class="card question-nav"><div class="nav" id="nv"></div></div>
+ <button class="btn finish" id="fn">Selesai &amp; Kumpulkan</button>
+</div>
+
+<div id="s2" class="hide">
+ <div class="card result"><h2 id="rt">Hasil Ujian</h2><div class="big" id="sc"></div><p id="rd"></p><p id="sheet-status" class="v"></p></div>
+ <div class="card"><h2>Catatan Pengawas</h2><div id="lg"></div></div>
+</div>
+</div>
+
+<div id="ov" class="hide"><div class="card"><h2 id="ot"></h2><p id="om"></p><div class="row" id="ob"></div></div></div>
+
+<script src="script.js" defer></script></body></html>
